@@ -1,3 +1,2 @@
 # MaisCarros
-Projeto integrado I - Faculdade Projeção
-Sistema Gerenciador de Estacionamento Rotativo - MaisCarros
+Projeto integrado I (Faculdade Projeção) - Sistema Gerenciador de Estacionamento Rotativo - MaisCarros
