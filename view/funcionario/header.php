@@ -13,7 +13,7 @@
         <script src="js/modernizr.custom.js"></script>
     </head>
     
-    <body style="background-color:#d9d9d9; overflow-y: hidden;">
+    <body style="background-color:#d9d9d9;">
 
  
     
