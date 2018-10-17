@@ -7,7 +7,7 @@
   <div style="margin-top: 20px; width: 1169px;" class="container-fluid">
     <div class="row">
       <div class="col-lg-6 col-md-6">
-        <div class="panel panel-primary" style="border-radius: 5px 5px 5px 15px;">
+        <div class="panel panel-primary" style="border-radius: 5px 5px 5px 15px; margin-top:-15px;">
           <div class="panel-heading">
             <h3 class="panel-title"><i class="fa fa-car fa-fw"></i> Entrada de veículo</h3>
           </div>
@@ -24,7 +24,7 @@
       </div>
       <div class="col-lg-6 col-md-6">
         <div class="row">
-          <div class="col-lg-6 col-md-6">
+          <div class="col-lg-6 col-md-6" style="margin-top:-15px;">
             <div class="panel panel-red">
               <div class="panel-heading">
                 <h3 class="panel-title"><i class="fa fa-car fa-fw"></i> Saída de veículo</h3>
@@ -40,7 +40,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6" >
+          <div class="col-lg-6 col-md-6" style="margin-top:-15px;">
             <div class="panel panel-green" style="height:193px;">
               <div class="panel-heading">
                 <h3 class="panel-title"><i class="fa fa-usd fa-fw"></i> Valor do serviço</h3>
