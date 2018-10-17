@@ -8,3 +8,17 @@ Login:
 ::: Funcionário - usuario(login) - 123(senha) :::
 <br>
 ::: Administrador - admin(usuario) - 123(senha) :::
+<br><br>
+::: CONFIGURAÇÃO PADRÃO DO BANCO(Altere para suas configurações) :::
+<br><br>
+caminho: maiscarros/model/DataBaseModel.php
+<br><br>
+class Database {
+<br>
+private $host  = "localhost";
+<br>
+private $user  = "root";
+<br>
+private $pass  = "081187";
+<br>
+private $banco = "maiscarros";
