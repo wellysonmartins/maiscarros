@@ -7,7 +7,7 @@
   <div style="width: 1169px; margin-top: 20px; height:500px;" class="container-fluid">
     <div class="row">
       <div class="col-lg-12">
-        <div class="panel panel-primary">
+        <div class="panel panel-primary" style="margin-top:-15px;">
           <div class="panel-heading">
             <h3 class="panel-title"><i class="fa fa-user fa-fw"></i> Clientes</h3>
           </div>
