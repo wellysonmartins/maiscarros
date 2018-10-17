@@ -87,6 +87,28 @@
       return $linha;
     }
 
+    public function readCliente( $table ) {
+      $pdo = parent::connect();
+      $busca = $pdo->prepare("SELECT * FROM cliente WHERE nomeCliente LIKE :nomeCliente OR id LIKE :nomeCliente OR cpf LIKE :nomeCliente");
+      $busca->bindValue(':nomeCliente', $table);
+      $busca->execute();
+
+      $linha = $busca->fetchAll(PDO::FETCH_ASSOC);
+
+      return $linha;
+    }
+
+     public function readVeiculo( $table ) {
+      $pdo = parent::connect();
+      $busca = $pdo->prepare("SELECT * FROM entrada_veiculo WHERE id LIKE :veiculo OR placa LIKE :veiculo OR id_vaga LIKE :veiculo");
+      $busca->bindValue(':veiculo', $table);
+      $busca->execute();
+
+      $linha = $busca->fetchAll(PDO::FETCH_ASSOC);
+
+      return $linha;
+    }
+
     public function getById( $id, $table ) {
       $pdo = parent::connect();
       $busca = $pdo->prepare("SELECT * FROM $table WHERE id = :id");

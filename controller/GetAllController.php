@@ -21,5 +21,13 @@
       return $this->CRUDModel->readAll( $table );
     }
 
+    function getCliente( $table ) {
+      return $this->CRUDModel->readCliente( $table );
+    }
+
+    function getVeiculo( $table ) {
+      return $this->CRUDModel->readVeiculo( $table );
+    }
+
   }
 ?>

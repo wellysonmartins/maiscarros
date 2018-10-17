@@ -4,7 +4,7 @@
 
     private $host  = "localhost";
     private $user  = "root";
-    private $pass  = "";
+    private $pass  = "081187";
     private $banco = "maiscarros";
 
     public function connect() {

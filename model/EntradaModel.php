@@ -108,7 +108,9 @@
       $tempo = "$horas2:$minutos"; 
       }
        
-      if (($dias < 1) && ($horas < 1)) {
+      if (($dias < 1) && ($horas < 1) && ($minutos < 2)) {
+        $valor = 0;
+      } else if (($dias < 1) && ($horas < 1)) {
         $valor = $preco;
       } else {   
         $valor = round((($preco/60) * $minutos) + ($preco * $horas) + ($dias * ($preco * 24)));    

@@ -2,17 +2,31 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
+            	<div class="form-group">
+					<div class="col-sm-12">
+				    	<form action="home_func.php" method="get">
+                    		<label style="color: #104E8B;" class="col-sm-5 control-label">Pesquisar cliente:</label>
+                    		<input style="margin-bottom: 10px;" class="form-control" type="text" name="getCliente" placeholder="Código, Nome ou CPF">
+                		</form>
+				    </div>
+				</div>
                 <form class="form-horizontal" target="_blank" action="../controller/entrada/RegisterController.php" method="post" enctype="multipart/form-data" autocomplete="off">
+	  				
 	  				<div class="form-group">
 				  		<div class="col-sm-12">
 				      		<label class="col-sm-3 control-label">Cliente</label>
 				      		<select style="margin-bottom: 10px;" class="form-control" name="id_cliente">
-				      			<option>Escolha um cliente</option>
-				        		<?php
+				      			<?php
 				        			get_file('controller/GetAllController');
 				        			$getAllCtrl = new GetAllController();
-				        			$clientes = $getAllCtrl->getAll('cliente'); 
-				          
+				        			if(isset($_GET["getCliente"])) {
+				        				$getCliente = $_GET["getCliente"];
+				        				$clientes = $getAllCtrl->getCliente($getCliente); 
+				          			} else {
+				          				$clientes = $getAllCtrl->getAll('cliente'); 
+				          				?> <option>Escolha um cliente</option> <?php
+				          			} 
+
 				        			foreach ($clientes as $cliente) { ?>
 				          
 				          				<option value="<?php echo $cliente['id'];?>"><?php echo $cliente['id'] . " - " . $cliente['nomeCliente'] . " - CPF: " . $cliente['cpf']; ?></option>
