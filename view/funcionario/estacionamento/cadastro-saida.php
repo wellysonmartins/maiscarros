@@ -5,9 +5,9 @@
             <div class="col-lg-12">
             	<div class="form-group">
 					<div class="col-sm-12">
-				    	<form action="home_func.php" method="get">
+				    	<form action="home_func.php" method="get" autocomplete="off">
                     		<label style="color: #104E8B;" class="col-sm-12 control-label">Pesquisar veículo:</label>
-                    		<input style="margin-bottom: 10px;" class="form-control" type="text" name="getVeiculo" placeholder="Código, Vaga ou Placa">
+                    		<input style="margin-bottom: 10px;" class="form-control" type="text" name="getVeiculo" placeholder="Código, Vaga ou Placa" required>
                 		</form>
 				    </div>
 				</div>

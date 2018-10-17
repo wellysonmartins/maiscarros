@@ -4,9 +4,9 @@
             <div class="col-lg-12">
             	<div class="form-group">
 					<div class="col-sm-12">
-				    	<form action="home_func.php" method="get">
+				    	<form action="home_func.php" method="get" autocomplete="off">
                     		<label style="color: #104E8B;" class="col-sm-5 control-label">Pesquisar cliente:</label>
-                    		<input style="margin-bottom: 10px;" class="form-control" type="text" name="getCliente" placeholder="Código, Nome ou CPF">
+                    		<input style="margin-bottom: 10px;" class="form-control" type="text" name="getCliente" placeholder="Código, Nome ou CPF" required>
                 		</form>
 				    </div>
 				</div>
