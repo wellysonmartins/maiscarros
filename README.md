@@ -19,6 +19,6 @@ private $host  = "localhost";
 <br>
 private $user  = "root";
 <br>
-private $pass  = "081187";
+private $pass  = "";
 <br>
 private $banco = "maiscarros";
