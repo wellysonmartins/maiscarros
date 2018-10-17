@@ -4,7 +4,7 @@
   $navbar->auth();
   $name = $navbar->getName();
 ?>
-	<div class="container">
+	<div class="container" style="margin-top:-12px;>
 		<div class="main">
 			<nav class="cbp-hsmenu-wrapper" id="cbp-hsmenu-wrapper">
 				<div class="cbp-hsinner">
