@@ -22,18 +22,22 @@
 				        			$getAllCtrl = new GetAllController();
 				        			if(isset($_GET["getVeiculo"])) {
 				        				$getVeiculo = $_GET["getVeiculo"];
-				        				$veiculos = $getAllCtrl->getVeiculo($getVeiculo); 
-				          			} else {
+				        				$veiculos = $getAllCtrl->getVeiculo($getVeiculo);
+                                        				          			} else {
 				          				$veiculos = $getAllCtrl->getAll('entrada_veiculo'); 
 				          				?> <option>Escolha um veículo</option> <?php
 				          			} 
-
-				        			foreach ($veiculos as $veiculo) { ?>
+                                    
+				        			if(!empty($veiculos)) {		
+                           			 		foreach ($veiculos as $veiculo) { ?>
 				          
 				          				<option value="<?php echo $veiculo['id'];?>"><?php echo "Código: " . $veiculo['id'] . " - Vaga: " . $veiculo['id_vaga'] . " - Placa: " . $veiculo['placa']; ?>
 				        	  			</option>
 				                      
-				        			<?php } ?>
+				        			<?php } }
+                            					else { ?>
+                            						<option value="Não encontrado!">Não encontrado!</option>
+                            					<?php }  ?>
 				      	</select>
 				    </div>
 				    <div class="form-group">
