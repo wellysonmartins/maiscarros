@@ -21,17 +21,20 @@
 				        			$getAllCtrl = new GetAllController();
 				        			if(isset($_GET["getCliente"])) {
 				        				$getCliente = $_GET["getCliente"];
-				        				$clientes = $getAllCtrl->getCliente($getCliente); 
+				        				$clientes = $getAllCtrl->getCliente($getCliente);
+                                        
 				          			} else {
 				          				$clientes = $getAllCtrl->getAll('cliente'); 
 				          				?> <option>Escolha um cliente</option> <?php
 				          			} 
-
+                                    				if(!empty($clientes)) {
 				        			foreach ($clientes as $cliente) { ?>
 				          
 				          				<option value="<?php echo $cliente['id'];?>"><?php echo $cliente['id'] . " - " . $cliente['nomeCliente'] . " - CPF: " . $cliente['cpf']; ?></option>
 				                      
-				        			<?php } ?>
+				        			<?php } } else { ?>
+                                        				<option value="Não encontrado!">Não encontrado!</option>
+                                    				<?php } ?>
 				      		</select>
 				    	</div>
 				  	</div>
